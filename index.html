@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourName — Game Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-bracket">[</span>YN<span class="logo-bracket">]</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="devlog.html">Devlog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <div class="hero-tag">// game developer & programmer</div>
+            <h1 class="hero-title">
+                <span class="hero-name-real">Your Name</span>
+                <span class="hero-divider">·</span>
+                <span class="hero-name-alias">YourAlias</span>
+            </h1>
+            <p class="hero-desc">
+                Building games and systems from scratch. Currently working on an FPS roguelite with deep mechanics and procedural content.
+            </p>
+            <div class="hero-cta">
+                <a href="projects.html" class="btn-primary">View Projects</a>
+                <a href="contact.html" class="btn-ghost">Get in touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-filename">GameLoop.cs</span>
+                </div>
+                <pre class="code-body"><span class="c-keyword">public class</span> <span class="c-class">GameLoop</span> : <span class="c-class">MonoBehaviour</span>
+{
+    <span class="c-keyword">void</span> <span class="c-method">Start</span>()
+    {
+        <span class="c-comment">// Always building something new</span>
+        <span class="c-class">Life</span>.<span class="c-method">Begin</span>();
+    }
+
+    <span class="c-keyword">void</span> <span class="c-method">Update</span>()
+    {
+        <span class="c-keyword">if</span> (<span class="c-class">Input</span>.<span class="c-method">GetKeyDown</span>(
+            <span class="c-class">KeyCode</span>.Passion))
+        {
+            <span class="c-class">Game</span>.<span class="c-method">Ship</span>();
+        }
+    }
+}</pre>
+            </div>
+        </div>
+    </main>
+
+    <section class="section-skills">
+        <div class="container">
+            <div class="skills-label">// tech stack</div>
+            <div class="skills-list">
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-featured">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <a href="projects/current.html" class="project-card featured">
+                    <div class="project-card-tag">Current</div>
+                    <h3>Untitled FPS Roguelite</h3>
+                    <p>A first-person shooter with roguelite mechanics, skill trees, enemy AI, and a weapon inventory system inspired by Borderlands.</p>
+                    <div class="project-tech">
+                        <span>Unity</span><span>C#</span>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+                <a href="projects/haunted-mines.html" class="project-card">
+                    <div class="project-card-tag">Released</div>
+                    <h3>Haunted Mines</h3>
+                    <p>A complete Unity game. Placeholder description — add your own summary here.</p>
+                    <div class="project-tech">
+                        <span>Unity</span><span>C#</span>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+                <a href="projects.html" class="project-card ghost-card">
+                    <span>View all projects →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-copy">© 2025 YourName</span>
+            <div class="footer-links">
+                <a href="https://github.com/yourhandle" target="_blank">GitHub</a>
+                <a href="https://yourhandle.itch.io" target="_blank">itch.io</a>
+                <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>
