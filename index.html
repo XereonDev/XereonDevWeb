@@ -1,148 +1,269 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1>HELLO</h1>
-</head>
-<body>
-    
-</body>
-=======
->>>>>>> fe00841 (Test test)
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourName — Game Developer</title>
+    <title>Xereon.dev | Indie Game Developer</title>
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="index.html" class="nav-logo">
-            <span class="logo-bracket">[</span>YN<span class="logo-bracket">]</span>
-        </a>
+
+<header class="navbar">
+
+    <a href="#" class="logo">
+        XEREON<span>.DEV</span>
+    </a>
+
+    <nav>
         <ul class="nav-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="devlog.html">Devlog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     </nav>
 
-    <main class="hero">
-        <div class="hero-content">
-            <div class="hero-tag">// game developer & programmer</div>
-            <h1 class="hero-title">
-                <span class="hero-name-real">Your Name</span>
-                <span class="hero-divider">·</span>
-                <span class="hero-name-alias">YourAlias</span>
-            </h1>
-            <p class="hero-desc">
-                Building games and systems from scratch. Currently working on an FPS roguelite with deep mechanics and procedural content.
-            </p>
-            <div class="hero-cta">
-                <a href="projects.html" class="btn-primary">View Projects</a>
-                <a href="contact.html" class="btn-ghost">Get in touch</a>
-            </div>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            // INDIE GAME DEVELOPER
+        </span>
+
+        <h1>
+            Building Games,<br>
+            Systems & Worlds.
+        </h1>
+
+        <p>
+            Unity developer focused on gameplay systems,
+            procedural generation, multiplayer experiences
+            and scalable game architecture.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn-primary">
+                View Projects
+            </a>
+
+            <a href="https://github.com/XereonDev" class="btn-secondary">
+                GitHub
+            </a>
+
         </div>
-        <div class="hero-visual">
-            <div class="code-block">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="code-filename">GameLoop.cs</span>
+
+    </div>
+
+</section>
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <span class="section-tag">
+            // ABOUT
+        </span>
+
+        <h2>
+            Hi, I'm Sergio.
+        </h2>
+
+        <p class="section-text">
+
+            I'm a game developer from Spain focused on
+            creating gameplay-driven experiences in Unity.
+
+            My work revolves around modular systems,
+            procedural generation, AI behaviour,
+            multiplayer architecture and FPS mechanics.
+
+            Currently building several projects while
+            continuously expanding my technical skills.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h3>4+</h3>
+        <p>Years Programming</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Unity</h3>
+        <p>Main Engine</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>C#</h3>
+        <p>Primary Language</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>∞</h3>
+        <p>Ideas Waiting</p>
+    </div>
+
+</section>
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <span class="section-tag">
+            // PROJECTS
+        </span>
+
+        <h2>
+            Current Work
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card featured">
+
+                <span class="project-status">
+                    IN DEVELOPMENT
+                </span>
+
+                <h3>
+                    Unannounced FPS Roguelite
+                </h3>
+
+                <p>
+
+                    Fast-paced first person shooter
+                    featuring procedural levels,
+                    skill trees, enemy AI,
+                    inventory systems and multiplayer.
+
+                </p>
+
+                <div class="project-tech">
+
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Steam</span>
+
                 </div>
-                <pre class="code-body"><span class="c-keyword">public class</span> <span class="c-class">GameLoop</span> : <span class="c-class">MonoBehaviour</span>
-{
-    <span class="c-keyword">void</span> <span class="c-method">Start</span>()
-    {
-        <span class="c-comment">// Always building something new</span>
-        <span class="c-class">Life</span>.<span class="c-method">Begin</span>();
-    }
 
-    <span class="c-keyword">void</span> <span class="c-method">Update</span>()
-    {
-        <span class="c-keyword">if</span> (<span class="c-class">Input</span>.<span class="c-method">GetKeyDown</span>(
-            <span class="c-class">KeyCode</span>.Passion))
-        {
-            <span class="c-class">Game</span>.<span class="c-method">Ship</span>();
-        }
-    }
-}</pre>
             </div>
-        </div>
-    </main>
 
-    <section class="section-skills">
-        <div class="container">
-            <div class="skills-label">// tech stack</div>
-            <div class="skills-list">
-                <span class="skill-tag">Unity</span>
-                <span class="skill-tag">C#</span>
-                <span class="skill-tag">C / C++</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">Git</span>
+            <div class="project-card">
+
+                <span class="project-status">
+                    MORE COMING SOON
+                </span>
+
+                <h3>
+                    Future Projects
+                </h3>
+
+                <p>
+
+                    Additional projects,
+                    prototypes and experiments
+                    will appear here.
+
+                </p>
+
             </div>
-        </div>
-    </section>
 
-    <section class="section-featured">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <a href="projects/current.html" class="project-card featured">
-                    <div class="project-card-tag">Current</div>
-                    <h3>Untitled FPS Roguelite</h3>
-                    <p>A first-person shooter with roguelite mechanics, skill trees, enemy AI, and a weapon inventory system inspired by Borderlands.</p>
-                    <div class="project-tech">
-                        <span>Unity</span><span>C#</span>
-                    </div>
-                    <div class="project-arrow">→</div>
-                </a>
-                <a href="projects/haunted-mines.html" class="project-card">
-                    <div class="project-card-tag">Released</div>
-                    <h3>Haunted Mines</h3>
-                    <p>A complete Unity game. Placeholder description — add your own summary here.</p>
-                    <div class="project-tech">
-                        <span>Unity</span><span>C#</span>
-                    </div>
-                    <div class="project-arrow">→</div>
-                </a>
-                <a href="projects.html" class="project-card ghost-card">
-                    <span>View all projects →</span>
-                </a>
-            </div>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container footer-inner">
-            <span class="footer-copy">© 2025 YourName</span>
-            <div class="footer-links">
-                <a href="https://github.com/yourhandle" target="_blank">GitHub</a>
-                <a href="https://yourhandle.itch.io" target="_blank">itch.io</a>
-                <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
-            </div>
+    </div>
+
+</section>
+
+<section id="skills" class="section">
+
+    <div class="container">
+
+        <span class="section-tag">
+            // SKILLS
+        </span>
+
+        <h2>
+            Tech Stack
+        </h2>
+
+        <div class="skills">
+
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Mirror</span>
+            <span>Steamworks</span>
+            <span>Git</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
         </div>
-    </footer>
 
-    <script src="js/nav.js"></script>
+    </div>
+
+</section>
+
+<section id="contact" class="section">
+
+    <div class="container">
+
+        <span class="section-tag">
+            // CONTACT
+        </span>
+
+        <h2>
+            Find Me Online
+        </h2>
+
+        <div class="contact-links">
+
+            <a href="https://github.com/XereonDev">
+                GitHub
+            </a>
+
+            <a href="#">
+                Steam
+            </a>
+
+            <a href="#">
+                Discord
+            </a>
+
+            <a href="#">
+                YouTube
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Xereon.dev
+    </p>
+
+</footer>
+
+<script src="js/main.js"></script>
+
 </body>
-<<<<<<< HEAD
-=======
->>>>>>> 75303c0 (First Test Load)
->>>>>>> fe00841 (Test test)
 </html>
