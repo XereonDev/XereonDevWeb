@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="navbar">
@@ -18,12 +20,17 @@
         XEREON<span>.DEV</span>
     </a>
 
+    <div class="language-selector">
+        <button id="lang-en">EN</button>
+        <button id="lang-es">ES</button>
+    </div>
+
     <nav>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-lang="nav_about">About</a></li>
+            <li><a href="#projects" data-lang="nav_projects">Projects</a></li>
+            <li><a href="#skills" data-lang="nav_skills">Skills</a></li>
+            <li><a href="#contact" data-lang="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -33,16 +40,16 @@
 
     <div class="hero-content">
 
-        <span class="hero-tag">
+        <span class="hero-tag" data-lang="hero_tag">
             // INDIE GAME DEVELOPER
         </span>
 
-        <h1>
+        <h1 data-lang="hero_title">
             Building Games,<br>
             Systems & Worlds.
         </h1>
 
-        <p>
+        <p data-lang="hero_desc">
             Unity developer focused on gameplay systems,
             procedural generation, multiplayer experiences
             and scalable game architecture.
@@ -50,11 +57,14 @@
 
         <div class="hero-buttons">
 
-            <a href="#projects" class="btn-primary">
+            <a href="#projects"
+               class="btn-primary"
+               data-lang="hero_projects">
                 View Projects
             </a>
 
-            <a href="https://github.com/XereonDev" class="btn-secondary">
+            <a href="https://github.com/XereonDev"
+               class="btn-secondary">
                 GitHub
             </a>
 
@@ -72,11 +82,12 @@
             // ABOUT
         </span>
 
-        <h2>
+        <h2 data-lang="about_title">
             Hi, I'm Sergio.
         </h2>
 
-        <p class="section-text">
+        <p class="section-text"
+           data-lang="about_text">
 
             I'm a game developer from Spain focused on
             creating gameplay-driven experiences in Unity.
@@ -98,22 +109,22 @@
 
     <div class="stat-card">
         <h3>4+</h3>
-        <p>Years Programming</p>
+        <p data-lang="stat_years">Years Programming</p>
     </div>
 
     <div class="stat-card">
         <h3>Unity</h3>
-        <p>Main Engine</p>
+        <p data-lang="stat_engine">Main Engine</p>
     </div>
 
     <div class="stat-card">
         <h3>C#</h3>
-        <p>Primary Language</p>
+        <p data-lang="stat_language">Primary Language</p>
     </div>
 
     <div class="stat-card">
         <h3>∞</h3>
-        <p>Ideas Waiting</p>
+        <p data-lang="stat_ideas">Ideas Waiting</p>
     </div>
 
 </section>
@@ -126,58 +137,33 @@
             // PROJECTS
         </span>
 
-        <h2>
-            Current Work
+        <h2 data-lang="projects_title">
+            Projects
         </h2>
 
         <div class="project-grid">
 
-            <div class="project-card featured">
+            <div class="project-card">
 
-                <span class="project-status">
-                    IN DEVELOPMENT
+                <span class="project-status"
+                      data-lang="hm_status">
+                    RELEASED
                 </span>
 
                 <h3>
-                    Unannounced FPS Roguelite
+                    Haunted Mines
                 </h3>
 
-                <p>
-
-                    Fast-paced first person shooter
-                    featuring procedural levels,
-                    skill trees, enemy AI,
-                    inventory systems and multiplayer.
-
+                <p data-lang="hm_desc">
+                    A multiplayer horror experience set in abandoned mines.
+                    Explore, survive and uncover what hides beneath.
                 </p>
 
                 <div class="project-tech">
-
                     <span>Unity</span>
                     <span>C#</span>
                     <span>Steam</span>
-
                 </div>
-
-            </div>
-
-            <div class="project-card">
-
-                <span class="project-status">
-                    MORE COMING SOON
-                </span>
-
-                <h3>
-                    Future Projects
-                </h3>
-
-                <p>
-
-                    Additional projects,
-                    prototypes and experiments
-                    will appear here.
-
-                </p>
 
             </div>
 
@@ -195,7 +181,7 @@
             // SKILLS
         </span>
 
-        <h2>
+        <h2 data-lang="skills_title">
             Tech Stack
         </h2>
 
@@ -227,7 +213,7 @@
             // CONTACT
         </span>
 
-        <h2>
+        <h2 data-lang="contact_title">
             Find Me Online
         </h2>
 
@@ -263,7 +249,7 @@
 
 </footer>
 
-<script src="./js/main.js" defer></script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
