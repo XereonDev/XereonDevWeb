@@ -19,29 +19,22 @@ body{
     margin:auto;
 }
 
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.navbar
+{
+    height: 80px;
 
-    padding:24px 6%;
+    padding: 0 8%;
 
-    position:sticky;
-    top:0;
-
-    background:rgba(13,17,23,.85);
-    backdrop-filter:blur(10px);
-
-    border-bottom:1px solid #1f2937;
-
-    z-index:1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo{
-    text-decoration:none;
-    color:white;
-    font-weight:800;
-    font-size:1.4rem;
+.logo
+{
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .logo span{
@@ -292,4 +285,40 @@ footer{
         flex-wrap:wrap;
     }
 
+}
+
+.language-switch
+{
+    display: flex;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 999px;
+
+    overflow: hidden;
+}
+
+.language-switch button
+{
+    width: 60px;
+    height: 36px;
+
+    border: none;
+    background: transparent;
+
+    color: #b0b8c5;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.language-switch button.active
+{
+    background: #4ade80;
+    color: #0f172a;
 }
